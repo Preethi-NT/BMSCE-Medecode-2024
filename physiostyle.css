@@ -1,0 +1,76 @@
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  #test-container {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 500px;
+  }
+  
+  .level-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  .level-buttons button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .level-buttons button.active {
+    background-color: #eee;
+  }
+  
+  #test-details {
+    display: none;
+  }
+  
+  #test-details h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  #test-details p {
+    margin-bottom: 1rem;
+  }
+  
+  #timer-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
+  #timer-controls button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #pain-scale {
+    margin-bottom: 1rem;
+  }
+  
+  #pain-scale label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  #pain-scale input[type="number"] {
+    width: 50px;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  #graph-container {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ddd;
+    margin-bottom: 1rem;
+  }
+  

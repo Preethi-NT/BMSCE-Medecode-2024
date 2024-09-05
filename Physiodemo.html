@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neurorehabilitation Tests</title>
+    <link rel="stylesheet" href="physiodemo2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Neurorehabilitation Tests</h1>
+
+        <!-- Timed Up and Go (TUG) Test -->
+        <div class="test" id="tugTest">
+            <h2> Level 1: Beginner</h2>
+            <h2>Timed Up and Go (TUG) Test</h2>
+            <p>Assess mobility and balance</p><br>
+            <ul type="disc">
+            <li>->Start by sitting in a standard armchair, with your back against the chair, arms resting on the armrests.</li>
+            <li>->Stand up from the chair without using your arms for support, if possible.</li>
+            <li>->Walk a distance of 3 meters (10 feet) at a comfortable and safe pace.</li>
+            </ul><br>
+            <button onclick="startTUG()">Start TUG Test</button>
+            <button onclick="stopTUG()">Stop TUG Test</button>
+            <div class="timer" id="tugTimer">Timer: 0s</div>
+            <input type="number" id="tugPainLevel" placeholder="Pain Level (0-10)">
+            <div class="graph" id="tugGraph"></div>
+        </div>
+
+        <!-- 10-Meter Walk Test (10MWT) -->
+        <div class="test" id="walkTest">
+            <h2>10-Meter Walk Test (10MWT)</h2>
+            <h2> Level 2: Intermediate</h2>
+            <p>Measure walking speed</p><br>
+            <ul>
+                <li>->Distance: The total distance to be walked is 10 meters.</li>
+                <li>->Time: The time it takes for the individual to walk the 10-meter distance is recorded.</li>
+                <li>->Start and Stop Points: Markers are placed at the start and stop points of the 10-meter distance</li>
+            </ul><br>
+            <button onclick="startTenMwt()">Start 10MWT Test</button>
+            <button onclick="stopTenMwt()">Stop 10MWT Test</button>
+            <div class="timer" id="walkTimer">Timer: 0s</div>
+            <input type="number" id="walkPainLevel" placeholder="Pain Level (0-10)">
+            <div class="graph" id="walkGraph"></div>
+        </div>
+
+        <!-- Berg Balance Scale (BBS) -->
+        <div class="test" id="bergTest">
+            <h2>Berg Balance Scale (BBS)</h2>
+            <h2> Level 3: Advanced</h2>
+            <p>Evaluate balance abilities</p><br>
+            <ul>
+                <li>->Standing to Sitting: Ability to sit down safely.</li>
+                <li>->Reaching Forward with Outstretched Arm: Ability to reach forward while standing.</li>
+                <li>->Turning 360 Degrees: Ability to turn completely around in a full circle.</li>
+            </ul><br>
+            <button onclick="startBbs()">Start BBS</button>
+            <button onclick="stopBbs()">Stop TUG Test</button>
+            <div class="timer" id="bergTimer">Timer: 0s</div>
+            <input type="number" id="bergPainLevel" placeholder="Pain Level (0-10)">
+            <div class="graph" id="bergGraph"></div>
+        </div>
+    </div>
+
+    <script src="physiodemonew3.js"></script>
+</body>
+</html>

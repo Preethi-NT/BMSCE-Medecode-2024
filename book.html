@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="book" id="book">
+    <h2 class="heading"><span>Schedule</span> a call with your Doctor</h1>
+    <div class="row">
+      <div class="image">
+        <img src="Virtual Consultation.jpg" alt="Image not found">
+      </div>
+      <form action="" id="myForm">  <h3>Schedule now</h3>
+        <input type="text" placeholder="Doctor Name" name="doctor_name" class="box">
+        <input type="text" placeholder="your name" name="name" class="box">
+        <input type="email" placeholder="your email" name="email" class="box">
+        <input type="date" name="date" class="box">
+        <a href="#" onclick="sendEmail()" class="btn">book now</a>
+      </form>
+    </div>
+  </section>
+  <script>
+    function sendEmail() {
+      var doctorName = document.getElementById("myForm").elements["doctor_name"].value;
+      var name = document.getElementById("myForm").elements["name"].value;
+      var email = document.getElementById("myForm").elements["email"].value;
+      var date = document.getElementById("myForm").elements["date"].value;
+
+      var emailBody = "Hi Dr. " + doctorName + ",\n\nI'd like to book an appointment. Here are my details:\n\n* Name: " + name + "\n* Email: " + email + "\n* Date: " + date + "\n\nThanks,\n" + name;
+
+      var mailtoLink = "mailto:preethi.cs22@bmsce.ac.in?subject=Appointment Booking&body=" + encodeURIComponent(emailBody);
+      window.location.href = mailtoLink;
+    }
+  </script>
+</body>
+</html>
+
